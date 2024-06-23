@@ -1,0 +1,7 @@
+public class ReverseString  {
+  public static void main(String...arg) {
+	  String s ="Don't give up, all the hard work will be getting recognised one day";
+	  StringBuffer sb = new StringBuffer(s);
+	  System.out.println(sb.reverse());
+  }
+}
