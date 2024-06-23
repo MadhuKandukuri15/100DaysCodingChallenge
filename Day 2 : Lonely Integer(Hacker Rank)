@@ -1,0 +1,49 @@
+📌 Given an array of integers, where all elements but one occur twice, find the unique element.
+
+Example 1 : 
+a = [1,2,1,2,3]
+The unique element is .
+3
+Example 2 : 
+a=[4,5,7,9,4,5,7]
+
+The unique element is .
+9
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class AppTest {
+	public static void main(String... arg) {
+		List<Integer> a = new ArrayList<>();
+		a.add(1);
+		a.add(2);
+		a.add(1);
+		a.add(2);
+		a.add(3);
+
+		String arr[] = new String[a.size()];
+		for (int i = 0; i < a.size(); i++) {
+			arr[i] = (a.get(i)).toString();
+		}
+
+		HashMap<String, Integer> hm = new HashMap<>();
+		for (int i = 0; i < arr.length; i++) {
+			if (hm.containsKey(arr[i])) {
+				hm.put(arr[i], hm.get(arr[i])+1);
+			} else {
+				hm.put(arr[i], 1);
+			}
+		}
+		int result;
+		for(Map.Entry<String, Integer> m : hm.entrySet()) {
+			if(m.getValue()==1) {
+				result=Integer.parseInt(m.getKey());
+			}
+		}
+System.out.println(result);
+		
+	}
+}
