@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AppTest {
+public class LonelyInteger {
 	public static void main(String... arg) {
 		List<Integer> a = new ArrayList<>();
 		a.add(1);
