@@ -1,0 +1,33 @@
+# two strings are anagram when we are able to produce the second string using first string 
+
+Example : 
+S1= Madhu
+S2 = adhmMu
+Output : Given Strings are anagram
+
+Example 2 :
+S1 = bhargav
+S2 = kandukuri
+output : not anagram
+
+
+class Anagram {
+public static void main(String...arg) {
+Scanner sc = new Scanner(System.in);
+		String s1 = sc.nextLine().toLowerCase();
+		String s2 = sc.nextLine().toLowerCase();
+		if(s1.length()!=s2.length()){
+		System.out.println("Given strings are not anagrams");
+		}
+		else {
+		String [] a=s1.split("");
+		String [] b = s2.split("");
+		Arrays.sort(a);
+		Arrays.sort(b);
+		if(Arrays.equals(a, b))
+		System.out.println("given strings are anagaram");
+		else 
+		System.out.println("not anagram");
+		}
+ }
+}
