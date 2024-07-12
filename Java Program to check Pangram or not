@@ -1,0 +1,20 @@
+# String is called pangram when the given string is contains all english alphabets
+Ex 1 : 
+Str = "Abcdefghijklmnopqrstuvwxyz";
+Output : YES
+Ex 2 : 
+Str = "dfgkseajgjsdf";
+output : NO
+
+class Pangram {
+
+public static void main(String...arg){
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter string : ");
+String inputString = sc.nextLine();
+System.out.println(inputString.length()==26?"given string is pangram": "given string is not pangram");
+
+}
+
+}
