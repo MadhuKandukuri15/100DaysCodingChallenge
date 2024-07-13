@@ -1,0 +1,20 @@
+#  Program to check vowel is present or not in given string 
+
+class CheckVowel {
+public static void main(String...arg) {
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter string : ");
+String s = sc.nextLine().toLowerCase();
+  char arr[] = s.toCharArray();
+  boolean b = false;
+  for(char ch:arr){
+    if(ch=='a' || ch=='e' || ch== 'i' || ch == 'o' || ch == 'u'){
+       b = true;
+    }
+  }
+   if(b)
+  System.out.println("Entered string contains vowels");
+  else 
+  System.out.println("no vowels present in entered string");
+  }
+}
