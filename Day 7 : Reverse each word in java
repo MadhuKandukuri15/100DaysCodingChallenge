@@ -1,0 +1,16 @@
+# Create Java Program to reverse each word in string 
+  Ex : Never give up one day I will reach my goal
+  Output : reverN evig pu eno yad I lliw hcaer ym laog
+  class ReverseWords { 
+  public static void main(String...arg){
+
+    Scanner sc = new Scanner(System.in);
+    String    s =sc.nextLine();
+    String arr[]=s.split(" ");
+    for(String word : arr)  {
+    StringBuilder sb = new StringBuilder(word);
+      System.out.println(sb.reverse() + " ");
+        
+    }
+  }
+  }
