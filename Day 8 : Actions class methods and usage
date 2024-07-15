@@ -1,0 +1,33 @@
+# Actions class is available in interactions package 
+# Used to perofrm actions like click, type, movetoelement, hover on element..etc 
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+class Mouse {
+public static void main(String...arg) {
+WebDriver driver = new ChromeDriver();
+driver.get("https://www.browserstack.com/"):
+Actions a = new Actions(driver);
+
+//to perform double click on element 
+driver.findElement(By.xpath("//a[@id='free-trial-link-anchor']"));
+a.doubleClick(trialaction).perform();
+
+//to perform mousehover on element 
+WebElement ele = driver.findElement(By.xpath(""));
+a.moveToElement(ele).perform();
+
+//perfom context click in selenium
+WebElement ele = driver.findElement(By.xpath(""));
+a.contexClick(ele).perform();
+
+//perform draganddrop 
+find source element 
+WebElement source = driver.findElement(By.xpath(""));
+find target element 
+WebElement target = driver.findElement(By.xpath(""));
+a.drageAndDrop(source,target).build.perform();
+}
+}
