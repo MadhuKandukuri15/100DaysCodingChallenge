@@ -1,0 +1,18 @@
+# Java program to find third largest number in the array
+class ThirdLargest {
+public static void main(String...arg){
+Scanner sc = new Scanner(System.in);
+Integer []arr = new Integer[5];
+for(int i=0;i<5;i++){
+arr[i]=sc.nextInt();
+}
+int thridLargest = findThirdLargest(arr);
+System.out.println(thirdLargest);
+}
+static int findThirdLargest(Integer arr){
+List<Integer> l = Arrays.asList(arr);
+Collections.sort(l);
+return l.get(l.size()-3);
+}
+
+}
